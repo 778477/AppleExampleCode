@@ -4,35 +4,6 @@
 
 SimplePing demonstrates ping (ICMP) send and receive.
 
-## Requirements
-
-### Build
-
-Xcode 7.3
-
-The sample was built using Xcode 7.2.1 on OS X 10.11.2 with the OS X 10.11 SDK.  You should be able to just open the project, select the *MacTool* scheme, and choose *Product* > *Build*.
-
-### Runtime
-
-10.11
-
-Although the sample requires 10.11, the core code works just fine on all versions of iOS and the underlying approach works on earlier versions of OS X (back to 10.2).
-
-## Packing List
-
-The sample contains the following items:
-
-* `README.md` — This file.
-
-* `LICENSE.txt` — The standard sample code license.
-
-* `SimplePing.xcodeproj` — An Xcode project for the program.
-
-* `Common` — A directory containing common code, namely, the SimplePing class, an object wrapper around the low-level BSD Sockets ping function.
-
-* `MacTool` — A directory containing a single file, `main.m`, which is a Mac command line tool to exercise the SimplePing class.
-
-* `iOSApp` — A directory containing a trivial iOS app to test the SimplePing class.  Most of it is boilerplate; the only interesting code is in `MainViewController.swift`, which is the iOS analogue of `main.m`.
 
 ## Using the Sample
 
@@ -103,6 +74,8 @@ If you find any problems with this sample, or you’d like to suggest improvemen
 1.3 (Jul 2012) was a minor update to adopt the latest tools and techniques (most notably, ARC).
 
 1.4 (Feb 2016) added support for IPv6.  There were many other editorial changes that don’t don’t impact on the core functionality of the sample.
+
+1.5 (June 2019) fixed iOSApp by Swift5. and keep SimplePing Thread live On new Runloop
 
 Share and Enjoy
 
